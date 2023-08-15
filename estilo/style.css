@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', 'cursive';
+    --fonte3:'Sriracha', 'cursive';
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+
+}
+header{
+    background-color: black;
+    color: white; 
+    text-align: center; /*centralizar texto*/
+
+
+}
+
+header > h1{
+    padding: 50px;/* espaço entre letras*/
+    font-variant: small-caps;/*1ª letra maiores mas todas são maiusculas*/
+
+    /*
+    text-transform: uppercase;colocar todas as letras em Maíscula
+    */
+    font-family:var(--fonte2);
+    /*font-size: 4em;tamanho da letra*/
+    font-size: 10vw;/*a letra aumenta e diminui de acordo com o tamanho da tela*/
+
+}
+
+header > p{
+  padding-bottom: 50px;
+
+}
+
+header a, footer a{/* p de h1 e footer */
+    color: white;
+    text-decoration: none;/*tira sublinhado da letra*/
+    font-weight: bolder;
+
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;/*passar mouse em cima vira sublinhado*/
+
+}
+
+section{
+    padding-top: 10vh;/*espaço entre as frases*/
+    padding-bottom: 10vh;
+    line-height: 2em;/*espaço entre as letras*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    /*font-size: 2em;aumentar tamanho da letra*/
+    font-size: 4vw;
+
+}
+
+section.normal{
+    background-color:white;
+    color: rgba(0, 0, 0, 0.929) 
+    
+}
+
+section.imagem{
+    background-color: rgba(35, 35, 35, 0.814);
+   color: white; 
+   box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.559);/*sombra pra dentro*/
+   background-size: cover;/*diminui o tamanho da imagem*/
+   background-attachment: fixed;/*fixar imagem fundo*/
+
+
+}
+
+section.imagem > p{
+    display: inline-block;/*a caixa se adequa ao conteúdo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 2px 2px 0px black;/*sombra*/
+    
+
+}
+
+section >p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
+
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
